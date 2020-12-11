@@ -1,5 +1,3 @@
-//Password Generator Code 
-
 var generateBtn = document.querySelector("#generate");
 
 function writePassword() {
@@ -21,12 +19,10 @@ function writePassword() {
 
     alert("For a secure password, there must be a combination of upper and lower case letters, numbers and or special symbols")
 
-
 //Prompt asking the user to enter a number of characters for the password
+// If the number is not between 8-128 characters or is a non-number input there will be an alerting to the criteria 
 
     var length = Number(prompt("How many characters would you like your password to be?"));
-
-// If the number is not between 8-128 characters or is a non-number input there will be an alerting to the criteria 
 
     if (isNaN(length) || length < 8 || length > 128) {
   
@@ -44,8 +40,8 @@ function writePassword() {
     }
 
       var charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*(){}[]=<>/,.",
-
-      var retVal = "";
+      
+      retVal = "";
 
       for (var i = 0, n = charset.length; i < length; ++i) {
           retVal += charset.charAt(Math.floor(Math.random() * n));
