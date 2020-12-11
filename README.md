@@ -1,6 +1,8 @@
 # week3passwordgenerator
 Password Generator
 
+https://h-mai.github.io/week3passwordgenerator/index.html
+
 The purpose of this code was to create a randomly generated password with the criteria that the user has chosen which is the length and the type of characers included.
 
 PseudoCode 
